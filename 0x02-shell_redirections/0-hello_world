@@ -1,4 +1,0 @@
-[master 55c2da0] hellow
- 3 files changed, 4 insertions(+), 1 deletion(-)
- delete mode 120000 0x02-shell_redirections/.#0-hello_world
- create mode 100755 0x02-shell_redirections/1-confused_smiley
