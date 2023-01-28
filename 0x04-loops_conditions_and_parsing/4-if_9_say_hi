@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script displays the string "Best School" 10 times with the 9th iteration, displays Best School and then Hi on a new line.
+j=1
+while [ $j -le 10 ]; do
+    echo "Best School"
+    if [ $j = 9 ]; then
+	echo "Hi"
+    fi
+    j=$(( j + 1 ))
+done
