@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script that loops 100 times and displays "FizzBuzz" when a number is a multiple of 3 and 5, "Fizz" for a multiple of 3, "Buzz" for a multiple of 5, otherwise display the number.
+for i in {1..100}; do
+    three=$((i%3))
+    five=$((i%5))
+
+    if [ $five -eq 0 ] && [ $three -eq 0 ]; then
+	echo "FizzBuzz"
+    elif  [ $three -eq 0 ]; then
+	echo "Fizz"
+    elif [ $five -eq 0 ]; then
+	echo "Buzz"
+    else
+	echo "$i"
+    fi
+done
