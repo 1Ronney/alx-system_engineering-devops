@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This script loops 10 times and displays the string "bad luck" for the 4th iteration, "good luck" for the 8th iteration and "Best School" for all others.
+j=1
+while [ $j -le 10 ]; do
+    if [ $j = 4 ]; then
+	echo "bad luck"
+    elif  [ $j = 8 ]; then
+	echo "good luck"
+    else
+	echo "Best School"
+    fi
+    j=$(( j + 1 ))
+done
