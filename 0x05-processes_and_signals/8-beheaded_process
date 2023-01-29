@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# This script kills the 7-highlander process
-pkill -KILL -f "./7-highlander"
+# Kills the process 7-highlander.
+
+pkill -f -SIGKILL 7-highlander
