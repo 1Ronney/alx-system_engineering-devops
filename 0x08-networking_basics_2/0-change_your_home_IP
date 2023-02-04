@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# it's a bash script that configures ubuntu with below requirements
+echo "127.0.0.2 localhost" > newhosts
+tail +2 /etc/hosts >> newhosts
+echo "8.8.8.8 facebook.com" >> newhosts
+cp /etc/hosts actualhosts
+sudo cp newhosts /etc/hosts
